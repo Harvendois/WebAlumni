@@ -1,3 +1,8 @@
+@font-face {
+    src: url(fonts/adam.otf);
+    font-family: ADAM;
+}
+
 body, html{
     height:100%;
     margin:0;
@@ -6,6 +11,7 @@ body, html{
     font-weight: 400;
     line-height: 1.8em;
     color: white;
+    background-color: #000; 
 }
 
 /* Global */
@@ -25,7 +31,7 @@ nav{
 }
 
 nav:hover{
-    background-color: #f12b37; 
+    background-color: #282e34; 
     color:aliceblue;
     transition: 0.8s;
 }
@@ -64,13 +70,14 @@ nav:hover{
     padding-bottom: 50px;
 }
 
-.section{
+section{
     text-align: center;
     padding: 50px 80px;
     
 }
 
 .section-light{
+    margin: 45px;
     background-color: aliceblue;
     color: #666;
 }
@@ -87,71 +94,23 @@ nav:hover{
     font-size: 24px;
 }
 
-.wrapper{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 3em;
-    justify-items: stretch;
-    align-items: center;
-    height: auto;
-   
-}
-
-.wrapper > div{
-    padding: 1em;
-}
-.wrapper > div:nth-child(1){
-    background:#f12b37;
-    color: white;
-}
-
-.motto{
-    grid-column: 1/4;
-    grid-row: 1/2;
-}
-
-.intro{
-    /*align-self:start;*/
-    grid-column: 1/4;
-    grid-row: 2/3;
-    text-align: justify;
-    font-size: 18px;
-    width: 100%;
-}
-.intro .contain{
-    width: 50%;
-    height: auto;
-    padding: 50px 50px 50px 400px;
-}
-
-.purpose{
-    /*align-self:end;*/
-    grid-column: 2/4;
-    grid-row: 3/3; 
+#intro{
+    grid-column: 1/3;
+    padding: 20px 45px;
     text-align: justify;
     font-size: 18px;
 }
-.purpose h3{
-    color: #f12b37;
-}
-.image-purpose{
-    grid-column: 1/2;
-    grid-row: 3/3;
-    font-size: 18px;
-    width: 800px;
-    height: auto;
-}
-.purpose .contain{
-    width: 50%;
-    height: auto;
-    padding: 50px 0px 50px 0px;
-}
 
-.readmore-btn .wrapper{
+#purpose{
+    grid-column: 3/3;
+    padding: 20px 45px;
+    text-align: justify;
+    font-size: 18px;
+}
+.section-light .intro-purpose .readmore-btn{
     padding: 15px 5px;
     font-size: auto;
+    border: 1px solid #666;
     width: 140px;
     height: 55px;
     text-align: center;
@@ -167,21 +126,21 @@ nav:hover{
     border-radius: 3px;
     cursor: pointer;
 }
+
 .readmore-btn a{
-    color: snow;
+    color: #666;
     text-decoration:none;
 }
 
 .readmore-btn a:hover{
-    color: pink;
+    color: #666;
     text-decoration: none;
 }
 .readmore-btn a:active {
     color: #282e34;
     text-decoration: none;
 }
-
-/*The end of section 1*/
+/*The end of section-light*/
 
 .news{
     color: lightgrey;
@@ -341,34 +300,92 @@ nav:hover{
     padding: 10px;
     box-sizing: border-box;
 }
+/* The beginning of footer */
 
-footer {
-    width: 100%;
-    padding: 160px 0px;
-    text-align: center;
-    background-color: #f12b37;
+footer{
+    width: 90%;
+    margin: auto;
+    padding: 100px 0px;
 }
-footer p{
-    color:white;
+
+
+.footer1{
+    color: lightgrey;
+    text-align: right;
+    display: grid;
+    grid-template-columns: max-content max-content;
 }
-footer p a{
-    color:white;
+
+.footer1 h6{
+    margin-right: 15px;
+}
+
+.footer1 p{
+    font-size: 1rem;
+}
+
+
+footer hr{
+    color: rgb(109, 105, 100);
+    border: 0;
+    background-color: rgb(109, 105, 100);
+    height: 1px; 
+}
+
+.footer1 a{
+    padding: 2px;
+    color: rgb(109, 105, 100);
+    text-decoration:none;
+    font-size: 0.7em;
+}
+
+.footer1 a:hover{
+    color: #282828;
     text-decoration: none;
 }
 
-footer p a:hover{
-    color:pink;
-    text-decoration: underline;
+.footer1 a:active {
+    color: #282e34;
+    text-decoration: none;
 }
 
-footer p a:active {
-    color:maroon;
-    text-decoration: underline;
+.footer2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 20px;
+    color: lightgrey;
 }
+
+.footer2 h6{
+    text-transform: uppercase;
+    color: rgb(109, 105, 100);
+}
+
+.footer2 p{
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.footer2 a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.footer2 a:hover{
+    text-decoration: none;
+    color: #282828;
+}
+
+.footer2 a:active {
+    color: #282e34;
+    text-decoration: none;
+}
+
 
 .square,{
     margin:300px;
 }
+
 .carousel-item img{
     width: 1600px;
     height: 900px;
@@ -378,9 +395,6 @@ footer p a:active {
     margin: 150px;
     height: auto;
     max-width: 100%;
-}
-.addition h2{
-    color: #f12b37;
 }
 .cover{
     background-color: blue;
@@ -444,6 +458,4 @@ footer p a:active {
     .pimg1, .pimg2, .pimg3{
         background-attachment: scroll;
     }    
-}
-}
-
+}}
