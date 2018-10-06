@@ -32,24 +32,24 @@ nav:hover{
 
 /*HEADER end*/
 /* Parallex Images*/
-
+/*
 .pimg1, .pimg2, .pimg3, .pimg4{
     position: relative;
     opacity: 0.70;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
+*/
 /*fixed = parallex
   scroll = normal
-  */
+
 
     background-attachment: fixed;
 }
 
 .pimg1{
     background-image: url('images/img1.jpeg');
-    min-height: 100%;
+    min-height: 50%;
 }
 
 .pimg2{
@@ -66,7 +66,7 @@ nav:hover{
     min-height: 400px;
     padding-bottom: 50px;
 }
-
+*/
 /*end of PARALLEX images*/
 
 .section{
@@ -83,15 +83,16 @@ nav:hover{
 }
 
 #box2{
-    background-color: #ccc;
+    background-color: #f12b37;
     margin-bottom: 30px;
     padding: 30px;
     font-size: 1.1em;
-    color: #000;
+    color: #fff;
     text-align: justify;
     display: grid;
     grid-template-columns: auto;
     justify-content: flex-start;
+    box-shadow: 10px 10px 5px 0px #ccc; 
 }
 
 
@@ -102,14 +103,16 @@ nav:hover{
 }
 
 #box3{
-    background-color: #ccc;
+    background-color: #f12b37;
     padding: 30px;
     font-size: 1.1em;
-    color: #000;
+    color: #fff;
     text-align: justify;
     display: grid;
     grid-template-columns: auto;
     justify-content: flex-start;
+    box-shadow: -10px 10px 5px 0px  #ccc; 
+
 }
 /*The end of section 1 INTRO AND PURPOSE*/
 
