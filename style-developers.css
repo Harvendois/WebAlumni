@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body, html{
     height:100%;
     margin:0;
@@ -9,6 +10,9 @@ body, html{
     background-image: url('images/black2.jpg');
 
 } 
+=======
+
+>>>>>>> fork/master
 
 /* FONTS */
 @font-face{
@@ -42,8 +46,13 @@ body, html{
     src: url('fonts/brooklyn.otf');
 }
 
+<<<<<<< HEAD
 
 /*HEADER BACKGROUND*/
+=======
+/* Global */
+
+>>>>>>> fork/master
 
 
 .hdev-background01{
@@ -268,6 +277,31 @@ body, html{
 
 /* END OF SUPPORT US SECTION */
 
+<<<<<<< HEAD
+=======
+.square,{
+    margin:300px;
+}
+
+.addition{
+    margin: 150px;
+    height: auto;
+    max-width: 100%;
+}
+.addition h2{
+    color: #f12b37;
+}
+.cover{
+    background-color: blue;
+    opacity: 0.70;
+    margin:auto;
+    max-width: fit-content;
+}
+.cover h5{
+    color: aliceblue;
+}
+
+>>>>>>> fork/master
 /* Media Queries */
 @media(max-width:1000px){
     .photo{
