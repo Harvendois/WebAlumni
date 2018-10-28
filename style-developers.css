@@ -1,13 +1,4 @@
-body, html{
-    height:100%;
-    margin:0;
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 400;
-    line-height: 1.8em;
-    color: white;
-    background-image: url('images/black2.jpg');
-} 
+
 
 /* FONTS */
 @font-face{
@@ -42,52 +33,7 @@ body, html{
 }
 
 /* Global */
-.container{
-    width: 80%;
-    margin:auto;
-    overflow: hidden;
-}
 
-/*Header*/
-header {
-    margin: 0;
-  }
-  
-  nav {
-    transition: 0.8s;
-    color: white;
-  }
-  
-  nav:hover {
-    background-color: white;
-    color: aliceblue;
-    transition: 0.8s;
-  }
-  
-  .nav-link {
-    color: black !important;
-  }
-  
-  .navbar-brand {
-    color: white !important;
-  }
-  
-  .btn-outline-dark {
-    background-color: white !important;
-    color: #495057 !important;
-    border-color: #ced4da !important;
-  }
-  
-  .navbar-light .navbar-toggler-icon {
-    background-color: white !important;
-  }
-  
-  .navbar-toggler {
-    background-color: white !important;
-  }
-  
-/*HEADER end*/
-/* Parallex Images*/
 
 
 .ptext-background{
@@ -338,48 +284,6 @@ header {
 
 
 /* END OF SUPPORT US SECTION */
-
-/* The beginning of footer */
-
-footer {
-    width: 100%;
-    letter-spacing: 4px;
-    font-size: 0.9em;
-    background: white;
-    margin: auto;
-    padding: 50px 0px;
-    text-align: center;
-    color: black;
-    font-family: "Bangers", cursive;
-  }
-   
-.fa-heart{
-	color:#ff0000;
-	animation:animateHeart 1.5s linear infinite;
-}
- @keyframes animateHeart{
-	0%{
-		transform:scale(1);
-		color:#000000;
-	}
-	20%{
-		color:#ee0000;
-	}
-	50%{
-		transform:scale(1.2);
-		color:#ff0000;
-	}
-	80%{
-		color:#ee0000;
-	}
- 	100%{
-		transform:scale(1);
-		color:#000000;
-	}
-}
-
-/*footer ends*/
-/*FEW ADDITIONALS*/
 
 .square,{
     margin:300px;
