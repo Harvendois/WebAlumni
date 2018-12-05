@@ -6,40 +6,54 @@
     padding: 0;
   }
 
-
-.fullscreen{
-    border-radius: 3px;
-    background-image: url('images/img1.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: justify;
-    background-size: cover;
-    text-decoration: none;
-    position: relative;
-    width: 100%;
-    height: 800px;
+body,html{
+    background-color: white;
 }
-.fullscreen h1{
-    position: absolute;
-    top: 68%;
-    bottom:0;
-    left: 10%;
-    right: 0;
+
+.theme{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 70px;
+    color: #203257;
+}
+.headline{
+    width: 60%;
+    margin: 0 auto;
+}
+.headline h1{
+    
     font-size: 65px;
     text-align: justify;
     font-weight: bold;
-    color: white;
+    color: black;
+}
+.sub-headline{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
-.fullscreen p{
-    position: absolute;
-    top: 80%;
-    left: 10%;
+.sub-headline p{
+   
     font-size: 16px;
     font-weight: bold;
-    color: #747474;
     text-align: justify;
-    color: beige;
+    color: black;
+}
+.photozone {
+    background-image: url('images/hungary.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 60%;
+    text-align: justify;
+    margin: 0 auto;
+}
+.photozone-word{
+    width: 60%;
+    text-align: justify;
+    margin: 0 auto;
 }
 
 .container-one{
@@ -51,7 +65,7 @@
     width: 70%;
     height: auto;
     margin: 0 auto;
-    padding: 100px 0 100px 0;
+    padding: 20px 0 100px 0;
 }
 .paragraphs img{
     margin: 10px auto;
