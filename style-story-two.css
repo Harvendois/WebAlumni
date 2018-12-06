@@ -7,7 +7,13 @@
   }
 
 body,html{
-    background-color: white;
+    font-family: "Oswald", sans-serif !important;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+        url('images/hungarianflag.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 .theme{
@@ -56,16 +62,17 @@ body,html{
     margin: 0 auto;
 }
 
-.container-one{
+.container-one, .container-three{
     background-color: white;
-
+    width: 80%;
+    margin: 0 auto;
 }
 .paragraphs{
     background-color: white;
-    width: 70%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
-    padding: 20px 0 100px 0;
+    padding: 20px 0 0 0;
 }
 .paragraphs img{
     margin: 10px auto;
@@ -78,11 +85,11 @@ body,html{
     text-align: justify;
 }
 
-.words-one{
+.words-one, .words-three{
     width: 80%;
     margin: 0 auto;
 }
-.words-one p{
+.words-one p, .words-three p{
     font-size: 20px;
     line-height: 3 ;
 }
@@ -111,8 +118,8 @@ body,html{
 
 
 .ref-intro{
-    padding-bottom: 100px;
-    margin: 0 auto;
+    padding: 50px 0;
+    margin: 100px auto 0 auto;
     background-color: white;
     text-align: center;
 }
