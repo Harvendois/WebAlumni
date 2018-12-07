@@ -1,0 +1,109 @@
+/* Global */
+body, html{
+    font-family: "Oswald", sans-serif !important;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url('images/americanflag.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+#main-paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #262626;
+}
+
+.container-first{
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding-bottom: 100px;
+}
+
+.container-second{
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+.secondzone{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+.secondleft{
+    grid-column: 1; 
+}
+.paragraphs{
+    width: 100%;
+}
+.secondright{
+    grid-column: 2;
+}
+
+.refline{
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-gap: 3em;
+    height: 500px;
+    width: 90%;
+}
+.ref1{
+    grid-row: 1;
+    background-image: url('images/indonesianflag.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ref2{
+    grid-row: 2;
+    background-image: url('images/australianflag.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ref3{
+    grid-row: 3;
+    background-image: url('images/mit.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*The end of the page settings*/
+
+/*HEADLINE SETTINGS*/
+
+.headline, .sub-headline{
+    width: 1300px;
+    max-width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+.theme{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 58px;
+    text-align: justify;
+    color:#5EB9AC;
+}
+
+.headline h1{
+    font-size: 35px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.sub-headline p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #747474;
+    text-align: justify;
+    margin-bottom: -5px;
+}
